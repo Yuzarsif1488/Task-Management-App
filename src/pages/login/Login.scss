@@ -1,0 +1,32 @@
+.login {
+  background-image: linear-gradient(to right, #21869d90, #2e505cd6);
+  display: flex;
+  height: 97vh;
+  align-items: center;
+  justify-content: center;
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 2px solid white;
+    height: 400px;
+    width: 350px;
+    border-radius: 10px;
+    align-items: center;
+    margin: 50px;
+    background-color: rgba(17, 78, 57, 0.211);
+    span {
+      font-size: larger;
+      color: white;
+      padding: 20px;
+    }
+    input {
+      padding: 10px;
+      margin: 10px;
+    }
+    img {
+      width: 300px;
+      height: 300px;
+    }
+  }
+}
