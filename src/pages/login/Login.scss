@@ -4,32 +4,38 @@
   height: 97vh;
   align-items: center;
   justify-content: center;
-  .container {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    border: 2px solid white;
-    height: 500px;
-    width: 450px;
-    border-radius: 10px;
-    align-items: center;
-    margin: 50px;
-    background-color: rgba(13, 136, 93, 0.363);
-    span {
-      font-size: 50px;
-      font-weight: 800;
-      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;
-      color: rgb(255, 255, 255);
-      padding: 20px;
-    }
-    input {
-      padding: 15px;
-      margin: 10px;
+  .form {
+    .form-input {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      border: 2px solid white;
+      height: 500px;
+      width: 450px;
+      border-radius: 10px;
+      align-items: center;
+      margin: 50px;
+      background-color: rgba(13, 136, 93, 0.363);
+      span {
+        font-size: 50px;
+        font-weight: 800;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        color: rgb(255, 255, 255);
+        padding: 20px;
+      }
+      input {
+        padding: 15px;
+        margin: 10px;
+      }
     }
 
     button {
       background-color: rgba(62, 168, 222, 0.18);
+      // padding: 20px;
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
     }
   }
 }

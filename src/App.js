@@ -1,38 +1,32 @@
-import { Children,useContext } from "react";
 import "./App.css";
 import Login from "./pages/Login/Login";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  useNavigate,Navigate
-} from "react-router-dom";
-import {UserContext} from './UserContext/UserContext';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+// import { UserContext } from "./UserContext/UserContext";
+// import { useContext } from "react";
 
-const navigate = useNavigate;
-const userContext = useContext(UserContext);
+// const navigate = useNavigate;
+// const userContext = useContext(UserContext);
 
-const ProtectedRoute = ({ isSignedIn, redirectPath = "/signin", children }) => {
-  if (!isSignedIn) {
-    return <Navigate to={redirectPath} replace />;
-  }
-  return children;
-};
+// const ProtectedRoute = ({ isSignedIn, redirectPath = "/signin", children }) => {
+//   if (!isSignedIn) {
+//     return <Navigate to={redirectPath} replace />;
+//   }
+//   return children;
+// };
 
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element:{
-        <ProtectedRoute isSignedIn={ userContext.isSignedIn } >
-        <Login/>
-      <ProtectedRoute/>
-    }
-    }
+      element: (
+        // < ProtectedRoute isSignedIn={ userContext.isSignedIn } >
+        <Login />
+      ),
+    },
   ]);
   return (
     <div>
       <RouterProvider router={router} />
-      {/* <Login /> */}
     </div>
   );
 }
