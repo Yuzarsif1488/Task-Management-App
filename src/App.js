@@ -1,5 +1,6 @@
 import "./App.css";
 import Login from "./pages/Login/Login";
+import Dashboard from "./pages/Dashboard/Dashboard";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // import { UserContext } from "./UserContext/UserContext";
 // import { useContext } from "react";
@@ -21,6 +22,13 @@ function App() {
       element: (
         // < ProtectedRoute isSignedIn={ userContext.isSignedIn } >
         <Login />
+      ),
+    },
+    {
+      path: "/dashboard",
+      element: (
+        // < ProtectedRoute isSignedIn={ userContext.isSignedIn } >
+        <Dashboard />
       ),
     },
   ]);
