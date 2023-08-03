@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  background-color: aqua;
+  .container {
+    display: flex;
+    .left {
+      img {
+        width: 100px;
+      }
+    }
+    .mid {
+      margin-right: 180px;
+      margin-left: 180px;
+      padding: 40px;
+    }
+  }
+}
